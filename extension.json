@@ -1,0 +1,54 @@
+{
+  "id": "pcl.screenshot-manager",
+  "name": "Screenshot Manager",
+  "version": "0.1.0",
+  "description": "Browse, filter, preview and export Minecraft screenshots across versions.",
+  "author": "PCL Community",
+  "apiVersion": 1,
+  "avaloniaMajorVersion": 11,
+  "entryAssembly": "PCL.Extensions.ScreenshotManager.dll",
+  "entryType": "PCL.Extensions.ScreenshotManager.ScreenshotManagerExtension",
+  "startWithLauncher": true,
+  "defaultLocale": "en-US",
+  "commands": [
+    {
+      "id": "pcl.screenshot-manager.open",
+      "title": "Screenshot Manager",
+      "titleKey": "title",
+      "shortcut": "Primary+Shift+S",
+      "keywords": [ "screenshot", "screenshots", "截图", "截图管理" ]
+    }
+  ],
+  "settings": [
+    {
+      "key": "include-shared",
+      "title": "Include shared screenshots",
+      "titleKey": "settings.include_shared",
+      "kind": "Boolean",
+      "defaultValue": "true"
+    },
+    {
+      "key": "date-from-filename",
+      "title": "Read capture date from filename",
+      "titleKey": "settings.date_from_filename",
+      "kind": "Boolean",
+      "defaultValue": "true"
+    },
+    {
+      "key": "thumbnail-size",
+      "title": "Thumbnail width",
+      "titleKey": "settings.thumbnail_size",
+      "kind": "Number",
+      "defaultValue": "320",
+      "minimum": 120,
+      "maximum": 640
+    },
+    {
+      "key": "export-folder",
+      "title": "Last export folder",
+      "titleKey": "settings.export_folder",
+      "kind": "String",
+      "defaultValue": ""
+    }
+  ]
+}

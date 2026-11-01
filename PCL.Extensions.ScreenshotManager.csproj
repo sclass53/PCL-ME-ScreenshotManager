@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>0.1.0</Version>
+    <AssemblyName>PCL.Extensions.ScreenshotManager</AssemblyName>
+    <RootNamespace>PCL.Extensions.ScreenshotManager</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PCL-ME\src\PCL.Extensions.Avalonia\PCL.Extensions.Avalonia.csproj" />
+    <Compile Remove="tests\**\*.cs" />
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>ScreenshotManager.Tests</_Parameter1>
+    </AssemblyAttribute>
+    <Content Include="extension.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Locales\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
