@@ -1,9 +1,9 @@
 {
   "id": "pcl.screenshot-manager",
   "name": "Screenshot Manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Browse, filter, preview and export Minecraft screenshots across versions.",
-  "author": "PCL Community",
+  "author": "sclass53",
   "apiVersion": 1,
   "avaloniaMajorVersion": 11,
   "entryAssembly": "PCL.Extensions.ScreenshotManager.dll",
