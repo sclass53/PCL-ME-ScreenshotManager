@@ -1,7 +1,17 @@
-# Screenshot Manager for PCL-ME
+<h1 align="center">Screenshot Manager</h1>
 
-[![](https://img.shields.io/badge/PCL--ME-EXTENSION-green?style=for-the-badge)](https://github.com/TheUnknownThing/PCL-ME)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0)
+<p align="center">
+  Powerful screenshot manager extension for PCL-ME.
+</p>
+
+<p align="center">
+  <a href="https://github.com/TheUnknownThing/PCL-ME">
+    <img src="https://img.shields.io/badge/PCL--ME-EXTENSION-green?style=for-the-badge" alt="PCL-ME">
+  </a>
+  <a href="https://www.gnu.org/licenses/gpl-3.0">
+    <img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge" alt="License: GPL v3">
+  </a>
+</p>
 
 ![Demo Image](demo.png)
 
@@ -10,7 +20,7 @@ collected from every version folder.
 
 ## Features
 
-- Includes shared `<minecraft>/screenshots` in a separate **Shared** group that is not counted
+- Collects all screenshots (made with F2 in game). Includes shared `<minecraft>/screenshots` in a separate **Shared** group that is not counted
   under any version.
 - Allows custom filters (and filename search):
   - multi-select version list (including Shared),
