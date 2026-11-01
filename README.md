@@ -1,33 +1,19 @@
 # Screenshot Manager for PCL-ME
 
-![](https://img.shields.io/badge/PCL--ME-PLUGIN-green?style=for-the-badge)
+[![](https://img.shields.io/badge/PCL--ME-PLUGIN-green?style=for-the-badge)](https://github.com/TheUnknownThing/PCL-ME)
 
 A standalone PCL-ME extension that browses, filters, previews and exports Minecraft screenshots
 collected from every version folder.
 
-The launcher is not modified; this is an extension installed through **Settings → Extensions**.
-
 ## Features
 
-- Scans `<launcher>/versions/<version>/screenshots` and `<version>/.minecraft/screenshots` for
-  every recognized PCL-ME instance.
 - Includes shared `<minecraft>/screenshots` in a separate **Shared** group that is not counted
   under any version.
-- Collapsible **Filters overlay** (opened from the **Filters** button; dimmed page backdrop; animated slide-in/out; 430 px panel):
+- Allows custom filters (and filename search):
   - multi-select version list (including Shared),
   - search by screenshot name (space-separated terms),
   - year / month / day filters with an **All** option at each level and a **Today** shortcut.
-- Thumbnail grid with lazy decoding and preview overlay.
-- Selection mode with checkboxes, **Select visible**, **Clear**, and exporting selected images
-  to a folder chosen with the system folder picker.
-- Uses the launcher’s motion helpers for page/tile/selection-bar entrances.
-
-## Requirements
-
-- .NET 10 SDK
-- PCL-ME with the extension system
-- A sibling checkout at `..\PCL-ME` (the project references
-  `..\PCL-ME\src\PCL.Extensions.Avalonia\PCL.Extensions.Avalonia.csproj`)
+- Allows selecting and exporting; users can export their preferred images to the specified folders in one click.
 
 ## Build and test
 
@@ -50,7 +36,7 @@ dotnet run --project ..\PCL-ME\tools\PCL.Tools.Extensions -- validate `
 
 Install the `.pclext` from **PCL-ME → Settings → Extensions → Install**, enable
 **Screenshot Manager**, then open it from the camera toolbar button, the Extensions menu/global
-search, or `Ctrl+Shift+S`.
+search, or `Ctrl+Shift+P`.
 
 ## Usage
 
@@ -85,14 +71,6 @@ otherwise from the file modification time.
 | `date-from-filename` | Prefer the timestamp in the screenshot filename. |
 | `thumbnail-size` | Decoded thumbnail width in pixels (120–640). |
 | `export-folder` | Last export destination (remembered). |
-
-## Limitations
-
-- Read-only: no delete or rename.
-- No capture-date editing.
-- The page is an extension workspace overlay, so the launcher title-bar navigation does not
-  dismiss it; use the page’s back button (host behavior, same as other extension pages).
-- Unrecognized version folders are not scanned; only PCL-ME instances are listed.
 
 ## Layout
 
