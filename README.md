@@ -1,6 +1,6 @@
 # Screenshot Manager for PCL-ME
 
-[![](https://img.shields.io/badge/PCL--ME-PLUGIN-green?style=for-the-badge)](https://github.com/TheUnknownThing/PCL-ME)
+[![](https://img.shields.io/badge/PCL--ME-EXTENSION-green?style=for-the-badge)](https://github.com/TheUnknownThing/PCL-ME)
 
 A standalone PCL-ME extension that browses, filters, previews and exports Minecraft screenshots
 collected from every version folder.
