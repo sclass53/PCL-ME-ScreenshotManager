@@ -23,7 +23,6 @@ collected from every version folder.
 - Collects all screenshots (made with F2 in game). Includes shared `<minecraft>/screenshots` in a separate **Shared** group that is not counted
   under any version.
 - Allows custom filters (and filename search):
-  - multi-select version list (including Shared),
   - search by screenshot name (space-separated terms),
   - year / month / day filters with an **All** option at each level and a **Today** shortcut.
 - Allows selecting and exporting; users can export their preferred images to the specified folders in one click.
